@@ -49,7 +49,8 @@ Design a cascode Bias Generator circuit using NMOS to produce 3 different branch
 
 ### ii. Schematic
 
-![Schematic Diagram of Bias-generator without specifications](<img width="578" alt="image" src="https://github.com/user-attachments/assets/c58e29e1-b9fc-46cd-b787-b08ee3652fec">)
+<img width="578" alt="image" src="https://github.com/user-attachments/assets/832987d9-2299-48f5-8352-7578adf67160">
+
 
 Strength Determination:
 - Reference NMOS strength: 1X (width: 120n)
@@ -65,13 +66,15 @@ DC analysis, or Direct Current analysis, is a method used in electronics to stud
 - By varying the strength of the transistors, we can observe the change in drain node current of each device by running dc analysis.
 - We increase the strength and run DC analysis again and again until we meet our specifications.
 
-![ADL setup for Bias-generator dc analysis](path/to/image)
+<img width="445" alt="image" src="https://github.com/user-attachments/assets/119b6a14-3d59-4af4-a348-b042179327eb">
+
 
 DC Analysis Output Waveform:
 - Input current: 30uA
 - Output currents: IA: 1.5mA, IB: 4mA, IC: 6mA
 
-![Output current graph](path/to/image)
+<img width="957" alt="image" src="https://github.com/user-attachments/assets/95a627df-da70-4077-b622-a6bb21c30643">
+
 
 ### iv. Conclusion
 
@@ -91,7 +94,8 @@ Design a differential amplifier with VDD = 1.8V, IN_P = 1.4V, IN_N = 0.7V, Load 
 
 ### ii. Schematic
 
-![Schematic diagram of single stage differential amplifier](path/to/image)
+<img width="898" alt="image" src="https://github.com/user-attachments/assets/fd239b50-45fa-4350-b23f-3fd3da5d977a">
+
 
 Steps to design the circuit:
 1. Calculate the bias current using the formula: Io = C * SR
@@ -103,13 +107,15 @@ Steps to design the circuit:
 
 DC analysis is used to check whether all the transistors are in the saturation region. If a device is not in the saturation region, the width of the transistor is increased and DC analysis is done again.
 
-![Model Library setup (pMOS and nMOS set to work in fast mode)](path/to/image)
+<img width="459" alt="image" src="https://github.com/user-attachments/assets/2a1b530e-ea29-49d9-82f3-850abf2343ed">
+
 
 ### iv. AC Analysis
 
 AC analysis is done to check whether the design meets the expected gain bandwidth product. If the GBP is less than expected, the width of the NM0 and NM1 transistors is increased, and the AC analysis is run again.
 
-![AC analysis output waveform](path/to/image)
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/40ff2ce2-ef45-4023-934c-266e7e31f8b0">
+
 
 Final transistor widths and lengths:
 - M1, M2: 1.6um
@@ -131,7 +137,8 @@ Pattern of matching:
 - E F
 - F E
 
-![Layout of single stage differential amplifier](path/to/image)
+<img width="867" alt="image" src="https://github.com/user-attachments/assets/6a2a399c-25fd-45a0-97de-83b204173bc3">
+
 
 ### vi. Conclusion
 
